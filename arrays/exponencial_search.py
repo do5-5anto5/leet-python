@@ -1,3 +1,9 @@
+"""
+In the exponential search algorithm, the pointers move in an exponentially increasing manner.
+When a subarray is found where the answer is known to be, a binary search is then initiated.
+Not so common to use, but is cool to understand it
+"""
+
 def binary_search(arr, lo, hi):
     while lo < hi:
         mid = int((lo + hi) / 2)
