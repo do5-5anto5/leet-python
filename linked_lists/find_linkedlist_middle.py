@@ -1,6 +1,6 @@
 from node import Node
 
-class DLLOddLength:
+class DLL:
     def __init__(self):
         self.head = None
         self.tail = None
@@ -14,8 +14,6 @@ class DLLOddLength:
             self.head = new_node
         self.tail = new_node
 
-    # To solve this problem is simple:
-
     def find_middle(self):
         # Put two pointers at head Node
         ahead = self.head
@@ -28,10 +26,10 @@ class DLLOddLength:
             middle = middle.next
 
         # When the ahead pointer can't walk, the middle pointer that walked a half than it, is in the middle Node
-
+        # If the list has two middle nodes, this will return the second one
         return middle.value
 
-dll = DLLOddLength()
+dll = DLL()
 
 dll.add(1)
 dll.add(2)
