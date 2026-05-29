@@ -46,20 +46,21 @@ class DoublyLinkedList:
         else:
             self.head = None
         return removed_value
-    
-dll = DoublyLinkedList()
 
-dll.add_to_front(3)
-dll.add_to_front(2)
-dll.add_to_front(1)
-dll.add_to_end(4)
-dll.add_to_end(5)
+if __name__ == '__main__':
+    dll = DoublyLinkedList()
+
+    dll.add_to_front(3)
+    dll.add_to_front(2)
+    dll.add_to_front(1)
+    dll.add_to_end(4)
+    dll.add_to_end(5)
 
 
-print('removed:', dll.remove_from_front())
-print('removed:', dll.remove_from_end())
-print('removed:', dll.remove_from_front())
-print('removed:', dll.remove_from_end())
+    print('removed:', dll.remove_from_front())
+    print('removed:', dll.remove_from_end())
+    print('removed:', dll.remove_from_front())
+    print('removed:', dll.remove_from_end())
 
-print('head:', dll.head.value)
-print('tail:', dll.tail.value)
+    print('head:', dll.head.value)
+    print('tail:', dll.tail.value)
